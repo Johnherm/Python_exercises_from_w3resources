@@ -1,0 +1,23 @@
+# Write a Python program that prints the calendar for a given month and year.
+import datetime, calendar
+date = datetime.datetime.now()
+print(date)
+
+calendar_of_year = datetime.datetime(2016,7,25)
+print(calendar_of_year)
+print(calendar_of_year.strftime("%B"))
+print(date.strftime("Weekday, full version  :%A %a %b %I"))
+print(date.strftime("Weekday, short version :%a"))
+print(date.strftime("Weekday as a number 0-6, 0 is Sunday: %w"))
+print(date.strftime("Day of month 01-31: %d"))
+print(date.strftime("Month name, short version: %b"))
+print(date.strftime("Month name, full version: %B"))
+print(date.strftime("Year, short version, without century: %y"))
+print(date.strftime("Year, full version:%Y"))
+print(date.strftime("Hour 00-23: %H"))
+print(date.strftime("Hour 00-12: %I"))
+print(date.strftime("AM/PM: %p"))
+print(date.strftime("Minute 00-59: %M"))
+print(date.strftime("Second 00-59: %S"))
+print(date.strftime("Timezone: %Z"))
+print(date.strftime("Century: %C"))
